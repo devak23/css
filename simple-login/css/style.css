@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+  background: #f4f4f4;
+  font-family: 'raleway';
+}
+
+div {
+  box-sizing: border-box;
+}
+
+div.container {
+  margin: 50px auto;
+  background: #fff;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 30px 80px;
+  padding-bottom: 80px;
+  box-shadow: 0 1px 1px 0 #ccc;
+}
+h1 {
+  padding: 0;
+  margin: 40px;
+  text-align: center;
+  font-size: 50px;
+  color: #444;
+}
+
+div.user, div.password {
+  background: #eee;
+  margin: 20px 0;
+  box-shadow: 0 1px 1px 0 #ccc;
+}
+
+div.user input, div.password input {
+  padding: 20px 8px;
+  background: transparent;
+  border: none;
+  width: 80%;
+  font-size: 16px;
+  color: #555;
+  font-weight: 100;
+}
+
+div.user input:focus, div.password input:focus {
+  outline: none;
+}
+
+div.user i, div.password i {
+  color: #777;
+  padding-left: 20px;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+div.btn button {
+  border: none;
+  background: #3AB1E9;
+  color: #fff;
+  padding: 12px;
+  font-family: Montserrat;
+  font-size: 15px;
+  box-shadow: 0 1px 1px 0 #ccc;
+}
+
+div.btn i {
+  padding-left: 10px;
+}
