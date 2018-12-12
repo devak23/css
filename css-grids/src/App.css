@@ -3,9 +3,19 @@ body {
   margin: 10%;
 }
 
+/* The box-sizing property allows us to include the padding and border in an element's total width and height. 
+ * If you set box-sizing: border-box; on an element padding and border are included in the width and height 
+ */
 * {
   box-sizing: border-box;
 }
+
+/**
+ * To define a Grid use display:grid or display:inline-grid on the parent element. 
+ * You can then create a grid using the grid-template-columns and grid-template-rows properties. 
+ * I am using the grid-gap property to create a gap between my columns and rows of 10px. 
+ * This property is a shorthand for grid-column-gap and grid-row-gap so you can set these values individually.
+ */
 
 .grid {
   display: grid;
