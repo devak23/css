@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  background-color: #3a4444;
+  padding: 20px;
+}
+
+.box {
+  width: calc(25% - 23px);
+  /* border: 1px solid lightgray; */
+  color: white;
+  padding: 10px;
+}
+
+.box h2 {
+  color: #2db457;
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid lightgray;
+}
+
+.left {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
