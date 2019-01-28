@@ -16,6 +16,11 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <title>Materialize CSS</title>
+    <style>
+      .box {
+        height: 200px;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -38,8 +43,9 @@
         It is 14px, so the h1 is 4.2 times 14px.
        </i>
       </pre>
-
-      <hr />
+    </div>
+    <hr />
+    <div class="container">
       <h4 class="hide">Hide me on all screen sizes</h4>
       <h4 class="hide-on-small-only">Hide me on small screen sizes</h4>
       <h4 class="hide-on-med-only">Hide me on medium screen sizes</h4>
@@ -51,9 +57,9 @@
         Hide me on medium and large screen sizes
       </h4>
       <h4 class="">Only show me on small screen sizes</h4>
-
-      <hr />
-
+    </div>
+    <hr />
+    <div class="container">
       <h5 class="blue darken-4">Be yourself, everyone else is already taken</h5>
       <h5 class="orange lighten-4">
         We are all in the gutter, but some of us are looking at the stars
@@ -68,6 +74,24 @@
       <h5 class="yellow lighten-3 purple-text text-darken-2">
         Always forgive your enemies - nothing annoys them so much!
       </h5>
+    </div>
+    <hr />
+    <div class="container">
+      <h5 class="center-align">Center alignment</h5>
+      <h5 class="left-align">Left alignment</h5>
+      <h5 class="right-align">Right alignment</h5>
+    </div>
+
+    <div class="container grey lighten-2 box valign-wrapper">
+      <h5>Vertical alignment</h5>
+    </div>
+
+    <div class="container">
+      <p class="truncate">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
+        consequuntur repellat velit esse natus omnis cum, neque provident vel
+        quod architecto deleniti eos in porro magni at error. Est, dolorem.
+      </p>
     </div>
   </body>
 </html>
