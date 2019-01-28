@@ -11,15 +11,16 @@ body {
 }
 
 /**
- * To define a Grid use display:grid or display:inline-grid on the parent element. 
+ * To define a Grid - use display:grid or display:inline-grid on the parent element. 
  * You can then create a grid using the grid-template-columns and grid-template-rows properties. 
- * I am using the grid-gap property to create a gap between my columns and rows of 10px. 
+ * I am using the grid-gap property to create a gap between my columns and rows of 20px. 
  * This property is a shorthand for grid-column-gap and grid-row-gap so you can set these values individually.
  */
 
 .grid {
   display: grid;
-  grid-template-columns: 200px 200px 200px;
+  /* grid-template-columns: 200px 200px 200px; - Defining this way doesn't make it responsive. Hence use fr unit*/
+  grid-template-columns: 1fr 1fr 1fr;
   /* grid-template-rows: 200px 100px; */
   /* grid-auto-rows: 100px; */
   grid-gap: 20px;
