@@ -14,11 +14,15 @@
       .box {
         height: 200px;
       }
-      .row > div {
+      .rowGrid > div {
         padding: 10px;
         background: #ddd;
         border: 1px solid #fff;
         line-height: 60px;
+      }
+      .colShadow > div {
+        background: lightblue;
+        height: 120px;
       }
     </style>
   </head>
@@ -124,19 +128,19 @@
     <hr />
     <div class="container">
       <h4>Grid</h4>
-      <div class="row">
+      <div class="row rowGrid">
         <div class="col s3">s3 col width</div>
         <div class="col s3">s3 col width</div>
         <div class="col s3">s3 col width</div>
         <div class="col s3">s3 col width</div>
       </div>
-      <div class="row">
+      <div class="row rowGrid">
         <div class="col s6 m3">s6 m3 col width</div>
         <div class="col s6 m3">s6 m3 col width</div>
         <div class="col s6 m3">s6 m3 col width</div>
         <div class="col s6 m3">s6 m3 col width</div>
       </div>
-      <div class="row">
+      <div class="row rowGrid">
         <div class="col s12 m6 l4">s12 m6 l4 col width</div>
         <div class="col s12 m6 l4">s12 m6 l4 col width</div>
         <div class="col s12 m6 l4">s12 m6 l4 col width</div>
@@ -144,7 +148,7 @@
         <div class="col s12 m6 l4">s12 m6 l4 col width</div>
         <div class="col s12 m6 l4">s12 m6 l4 col width</div>
       </div>
-      <div class="row">
+      <div class="row rowGrid">
         <div class="col s12 m6 l4 xl2">s12 m6 l4 xl2 col width</div>
         <div class="col s12 m6 l4 xl2">s12 m6 l4 xl2 col width</div>
         <div class="col s12 m6 l4 xl2">s12 m6 l4 xl2 col width</div>
@@ -152,11 +156,35 @@
         <div class="col s12 m6 l4 xl2">s12 m6 l4 xl2 col width</div>
         <div class="col s12 m6 l4 xl2">s12 m6 l4 xl2 col width</div>
       </div>
-      <div class="row">
+      <div class="row rowGrid">
         <div class="col s12 m8">s12 m6 m8 col width</div>
         <div class="col s12 m4">s12 m6 m4 col width</div>
         <div class="col s12 m4">s12 m6 m4 col width</div>
         <div class="col s12 m8">s12 m6 m8 col width</div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <h4>Shadows & Depth</h4>
+      <div class="row">
+        <div class="col s2 colShadow">
+          <div class="">No shadow</div>
+        </div>
+        <div class="col s2 colShadow">
+          <div class="z-depth-1">z-depth-1</div>
+        </div>
+        <div class="col s2 colShadow">
+          <div class="z-depth-2">z-depth-2</div>
+        </div>
+        <div class="col s2 colShadow">
+          <div class="z-depth-3">z-depth-3</div>
+        </div>
+        <div class="col s2 colShadow">
+          <div class="z-depth-4">z-depth-4</div>
+        </div>
+        <div class="col s2 colShadow">
+          <div class="z-depth-5">z-depth-5</div>
+        </div>
       </div>
     </div>
   </body>
