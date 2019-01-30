@@ -22,12 +22,17 @@
         background: lightblue;
         height: 120px;
       }
+      nav .badge {
+        position: relative;
+        top: 20px;
+        right: 20px;
+      }
     </style>
   </head>
   <body>
-    <nav class="nav-wrapper blue lighten-2">
+    <nav class="nav-wrapper blue">
       <div class="container">
-        <a href="javascript:;" class="brand-logo">Joggers</a>
+        <a href="javascript:;" class="brand-logo">Coders!</a>
         <a href="javascript:;" class="sidenav-trigger" data-target="mobile-links">
           <i class="material-icons">menu</i>
         </a>
@@ -35,7 +40,11 @@
           <li><a href="javascript:;">Products</a></li>
           <li><a href="javascript:;">About</a></li>
           <li><a href="javascript:;">Contact</a></li>
-          <li><a href="javascript:;">Login</a></li>
+          <li><a href="javascript:;" class="btn-floating blue darken-2 z-depth-0 waves-effect waves-light">
+            <i class="material-icons">notifications</i>
+          </a>
+        </li>
+        <li><span class="badge white-text red new lighten-1">5</span></li>
         </ul>
         <ul class="sidenav" id="mobile-links">
           <li><a href="javascript:;">Products</a></li>
