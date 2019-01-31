@@ -318,12 +318,33 @@
         </li>
       </ul>
     </div>
+    <hr />
+    <div class="container">
+      <h2>Modals</h2>
+      <a href="#terms" class="btn orange waves-effect waves-light modal-trigger">Terms and Conditions</a>
+
+      <div class="modal" id="terms">
+        <div class="modal-content">
+          <h4>Terms and Conditions</h4>
+          <p class="modal-body">
+            Quis ut incididunt anim pariatur laborum magna ex. Minim est eu esse nisi aute cillum non nostrud sunt
+            tempor cillum occaecat voluptate cillum. Esse veniam esse ut in ipsum dolor et minim ullamco ut ex. Et
+            exercitation aliquip magna ut cillum consequat officia sit proident quis occaecat. Deserunt ad aliquip velit
+            labore mollit culpa deserunt magna voluptate pariatur duis.
+          </p>
+          <div class="modal-footer">
+            <a href="javascript:;" class="modal-close btn orange waves-effect waves-light">Agree & Close</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
       $(document).ready(function() {
         $('.sidenav').sidenav();
+        $('.modal').modal();
       });
     </script>
   </body>
