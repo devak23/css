@@ -29,6 +29,13 @@
         padding-top: 4vw;
         padding-bottom: 4vw;
       }
+      .tabs .indicator {
+        background-color: #1a237e;
+      }
+      .tabs .tab a:focus,
+      .tabs .tab a:focus.active {
+        background: transparent;
+      }
 
       @media screen and (max-width: 670px) {
         header {
@@ -111,34 +118,56 @@
     </div>
 
     <!-- services / tabs -->
-    <div class="container">
-      <p>
-        Ea deserunt cillum officia laborum nostrud duis velit deserunt commodo cupidatat fugiat ea id cupidatat.
-        Reprehenderit nisi minim irure laboris consequat cupidatat exercitation sunt occaecat exercitation enim esse
-        elit. Nulla aliquip Lorem nulla nisi in non ex fugiat Lorem nostrud. Qui anim ipsum pariatur reprehenderit.
-      </p>
-      <p>
-        Consectetur ad reprehenderit amet velit sint cupidatat deserunt aliqua elit culpa duis. Quis aute laborum in
-        nostrud pariatur amet occaecat esse elit sit adipisicing aliquip adipisicing. Nisi amet pariatur laboris ipsum
-        aliqua quis reprehenderit. Do adipisicing labore adipisicing et ad laborum ut qui sint sint fugiat aliqua.
-        Veniam duis sit ipsum ut reprehenderit ea fugiat irure. Esse tempor laborum anim cillum occaecat ea nostrud ut
-        sit tempor pariatur pariatur irure dolor. Excepteur deserunt Lorem eiusmod sint.
-      </p>
-      <p>
-        Consectetur ad reprehenderit amet velit sint cupidatat deserunt aliqua elit culpa duis. Quis aute laborum in
-        nostrud pariatur amet occaecat esse elit sit adipisicing aliquip adipisicing. Nisi amet pariatur laboris ipsum
-        aliqua quis reprehenderit. Do adipisicing labore adipisicing et ad laborum ut qui sint sint fugiat aliqua.
-        Veniam duis sit ipsum ut reprehenderit ea fugiat irure. Esse tempor laborum anim cillum occaecat ea nostrud ut
-        sit tempor pariatur pariatur irure dolor. Excepteur deserunt Lorem eiusmod sint.
-      </p>
-      <p>
-        Consectetur ad reprehenderit amet velit sint cupidatat deserunt aliqua elit culpa duis. Quis aute laborum in
-        nostrud pariatur amet occaecat esse elit sit adipisicing aliquip adipisicing. Nisi amet pariatur laboris ipsum
-        aliqua quis reprehenderit. Do adipisicing labore adipisicing et ad laborum ut qui sint sint fugiat aliqua.
-        Veniam duis sit ipsum ut reprehenderit ea fugiat irure. Esse tempor laborum anim cillum occaecat ea nostrud ut
-        sit tempor pariatur pariatur irure dolor. Excepteur deserunt Lorem eiusmod sint.
-      </p>
-    </div>
+    <section class="container section" id="services">
+      <div class="row">
+        <div class="col s12 l4">
+          <h2 class="indigo-text text-darken-4">What I do</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aspernatur quis nemo eum at quisquam, non
+            in quam, rerum eius iure sit atque esse. Nihil quidem ex veniam vitae at?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iure, impedit eos perferendis laborum eveniet
+            totam ipsum ut doloremque quaerat recusandae nisi porro tempore assumenda dolorem repellendus itaque. Porro,
+            tenetur.
+          </p>
+        </div>
+        <div class="col s12 l6 offset-l2">
+          <ul class="tabs">
+            <li class="tab col s6">
+              <a href="#photography" class="indigo-text text-darken-4">Photography</a>
+            </li>
+            <li class="tab col s6">
+              <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+            </li>
+          </ul>
+          <div class="col s12" id="photography">
+            <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi numquam quibusdam, sint at eos aut
+              incidunt quos enim. Quae qui soluta tempora labore sequi maiores debitis quaerat ut explicabo sit?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eius, voluptate beatae corrupti
+              voluptatibus cupiditate animi nisi adipisci quaerat corporis? Fugiat eveniet facere, autem delectus
+              tempora deserunt. Quia, omnis minus!
+            </p>
+          </div>
+          <div class="col s12" id="editing">
+            <p class="flow-text indigo-text text-darken-4">EDITING</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi numquam quibusdam, sint at eos aut
+              incidunt quos enim. Quae qui soluta tempora labore sequi maiores debitis quaerat ut explicabo sit?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eius, voluptate beatae corrupti
+              voluptatibus cupiditate animi nisi adipisci quaerat corporis? Fugiat eveniet facere, autem delectus
+              tempora deserunt. Quia, omnis minus!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- parallax -->
     <div class="parallax-container">
@@ -159,6 +188,7 @@
         $('.sidenav').sidenav();
         $('.materialboxed').materialbox();
         $('.parallax').parallax();
+        $('.tabs').tabs();
       });
     </script>
   </body>
