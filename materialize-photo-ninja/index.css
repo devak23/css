@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-html body {
+html,
+body,
+input,
+button,
+input:active {
   font-family: 'Montserrat', sans-serif;
 }
 
