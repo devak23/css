@@ -26,6 +26,10 @@ header {
   background: transparent;
 }
 
+.material-icons .prefix :active {
+  background: indigo;
+}
+
 @media screen and (max-width: 670px) {
   header {
     min-height: 500px;
