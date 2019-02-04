@@ -18,31 +18,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
     />
     <title>Photo Ninja</title>
-    <style>
-      header {
-        background: url(img/man.jpg);
-        background-size: cover;
-        background-position: center;
-        min-height: 1000px;
-      }
-      .section {
-        padding-top: 4vw;
-        padding-bottom: 4vw;
-      }
-      .tabs .indicator {
-        background-color: #1a237e;
-      }
-      .tabs .tab a:focus,
-      .tabs .tab a:focus.active {
-        background: transparent;
-      }
-
-      @media screen and (max-width: 670px) {
-        header {
-          min-height: 500px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <!-- navbar -->
@@ -177,6 +153,45 @@
     </div>
 
     <!-- contact form -->
+    <section class="section container" id="contact">
+      <div class="row">
+        <div class="col s12 l5">
+          <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero velit dicta iste tempora facilis ea
+            dignissimos, saepe sequi eius quae ab omnis libero quis sunt obcaecati, alias, minima possimus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero velit dicta iste tempora facilis ea
+            dignissimos, saepe sequi eius quae ab omnis libero quis sunt obcaecati, alias, minima possimus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero velit dicta iste tempora facilis ea
+            dignissimos, saepe sequi eius quae ab omnis libero quis sunt obcaecati, alias, minima possimus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi vero velit dicta iste tempora facilis ea
+            dignissimos, saepe sequi eius quae ab omnis libero quis sunt obcaecati, alias, minima possimus.
+          </p>
+        </div>
+        <div class="col s12 l5 offset-l2">
+          <form action="">
+            <div class="input-field">
+              <i class="material-icons prefix">email</i>
+              <input type="email" id="email" />
+              <label for="email">Your email</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">message</i>
+              <textarea id="message" class="materialize-textarea" id="message"></textarea>
+              <label for="message">Your message</label>
+            </div>
+            <div class="input-field"></div>
+            <div class="input-field"></div>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <!-- footer -->
 
