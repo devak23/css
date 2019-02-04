@@ -33,6 +33,20 @@
             <li><a href="#">Photos</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
+            <li>
+              <a href="#" data-tooltip="Instagram" class="tooltipped btn-floating btn-small transparent">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" data-tooltip="Facebook" class="tooltipped btn-floating btn-small transparent">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#" data-tooltip="Twitter" class="tooltipped btn-floating btn-small transparent">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" data-tooltip="Google+" class="tooltipped btn-floating btn-small transparent">
+                <i class="fab fa-google-plus"></i>
+              </a>
+            </li>
           </ul>
           <ul class="sidenav grey lighten-2" id="mobile-menu">
             <li><a href="#">Photos</a></li>
@@ -148,7 +162,7 @@
     <!-- parallax -->
     <div class="parallax-container">
       <div class="parallax">
-        <img src="img/stars.jpg" alt="starts.jpg" class="responsive-img" />
+        <img src="img/street.jpg" alt="street.jpg" class="responsive-img" />
       </div>
     </div>
 
@@ -224,7 +238,7 @@
               quibusdam nam!
             </p>
           </div>
-          <div class="col s12 l4 offset-l2">
+          <div class="col s12 l4 offset-l1">
             <h5>Connect</h5>
             <ul>
               <li><a href="#" class="grey-text text-lighten-3">Facebook</a></li>
@@ -253,6 +267,7 @@
         $('.datepicker').datepicker({
           disableWeekends: true
         });
+        $('.tooltipped').tooltip();
       });
     </script>
   </body>
