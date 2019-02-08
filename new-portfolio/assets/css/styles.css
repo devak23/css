@@ -1,0 +1,12 @@
+.logo {
+  font-weight: 300;
+  padding: 10px;
+}
+
+body {
+  min-height: 200vh;
+}
+
+.parallax {
+  position: static;
+}
