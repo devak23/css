@@ -10,3 +10,10 @@ body {
 .parallax {
   position: static;
 }
+
+.thin-text {
+  font-weight: 300;
+  background: rgba(96, 124, 161, 0.4);
+  padding: 40px;
+  border-radius: 10px;
+}
