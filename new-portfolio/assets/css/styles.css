@@ -11,18 +11,23 @@ body {
   position: static;
 }
 
-.thin-text {
-  font-weight: 300;
+.lightbox {
   background: rgba(96, 124, 161, 0.4);
   padding: 40px;
   border-radius: 10px;
 }
 
-.section-header {
-  font-weight: 300;
+.cta {
+  text-shadow: 1px 1px black;
 }
 
-.cta {
-  font-weight: 300;
-  text-shadow: 1px 1px black;
+.thin-text,
+.lightbox,
+.cta,
+.section-header {
+  font-weight: 250;
+}
+
+.about-text {
+  font-size: 2.5vh;
 }
