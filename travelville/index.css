@@ -3,3 +3,11 @@ h2,
 h3 {
   font-weight: 300;
 }
+
+.section-search input {
+  padding: 5px !important;
+  font-size: 18px;
+  width: 90%;
+  border: #f4f4f4 3px solid !important;
+  border-radius: 4px;
+}
