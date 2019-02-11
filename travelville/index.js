@@ -6,7 +6,7 @@ M.Slider.init(slider, {
   indicators: false,
   height: 500,
   transition: 500,
-  interval: 2000
+  interval: 5000
 });
 
 const autocomplete = document.querySelector('.autocomplete');
