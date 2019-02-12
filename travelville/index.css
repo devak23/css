@@ -9,3 +9,16 @@
 .section-follow .fa-4x {
   margin: 5px 10px;
 }
+
+.input-field input[type='text']:focus + label,
+.input-field textarea:focus + label,
+.input-field input[type='email']:focus + label {
+  color: #1a237e !important;
+}
+
+.input-field input[type='email']:focus,
+.input-field textarea:focus,
+.input-field input[type='text']:focus {
+  border-bottom: 1px solid #1a237e !important;
+  box-shadow: 0 !important;
+}
