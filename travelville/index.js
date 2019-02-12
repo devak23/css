@@ -21,3 +21,11 @@ M.Autocomplete.init(autocomplete, {
     Europe: 'img/europe_thumb.jpg'
   }
 });
+
+const materialboxed = document.querySelectorAll('.materialboxed');
+M.Materialbox.init(materialboxed, {});
+
+console.log(M);
+
+// const scrollspy = document.querySelector('.scrollspy');
+// M.Scrollspy.init(scrollspy, {});
