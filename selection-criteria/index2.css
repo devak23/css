@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff1FF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+}
+
+.container {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #3AB1E9;
+}
+
+.container:nth-child(0) {
+    flex-grow: 2;
+}
+
+.container select {
+}
+
+.container a {
+    margin: 5px 2px;
+}

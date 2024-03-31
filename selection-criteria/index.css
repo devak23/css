@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff1FF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+}
+
+.container select {
+    width: 150px;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
