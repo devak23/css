@@ -1,0 +1,141 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./example.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="text">
+      Cascade combines CSS declarations coming from different sources into one.
+      These sources could be
+      <ul>
+        <li>Author declarations</li>
+        <li>User declarations</li>
+        <li>UserAgent (Browser) declarations</li>
+      </ul>
+
+      The way CSS resolves the conflicting rules specified by these sources is
+      to look at
+      <div class="source-resolution">
+        <span class="importance">Importance </span>
+        <span class="arrow"> > </span>
+        <span class="specificity">specificity</span>
+        <span class="arrow"> > </span>
+        <span class="sourceOrder">Source order</span>
+      </div>
+      in order to determine which takes precedence.
+    </div>
+
+    <div class="text">
+      How is priority and specificity evaulated?
+      <div class="source-resolution">
+        <span class="param-desc">
+          <div class="param-title">Importance</div>
+          <div class="param-list">
+            <ol>
+              <li>User <code>!important</code> declarations</li>
+              <li>Author <code>!important</code> declarations</li>
+              <li>Author declarations</li>
+              <li>User declarations</li>
+              <li>Default browser declarations</li>
+            </ol>
+          </div>
+        </span>
+        <span class=""> > </span>
+        <span class="param-desc">
+          <div class="param-title">Specificity</div>
+          <div class="param-list">
+            <ol>
+              <li>Inline styles</li>
+              <li>IDs</li>
+              <li>Classes, pseudo-classes, attributes</li>
+              <li>Elements, pseudo-elements</li>
+            </ol>
+          </div>
+        </span>
+        <span class=""> > </span>
+        <span class="">Source order</span>
+      </div>
+
+      <div class="image-and-content">
+        <img
+          src="./images/css_rules.png"
+          width="300"
+          height="370"
+          alt="css_rules"
+        />
+        <div class="content">
+          Considering the code on the left, what will be the background color?
+          Blue? Purple? Orange or Yellow? -
+          <ul>
+            <li>
+              First off, all these declarations have the same importance. They
+              are all author declarations.
+            </li>
+            <li>
+              The specificity is not just 1 number but rather one number for
+              each of the categories in the following way:
+              <ul>
+                <li>count of occurrence of inline styles</li>
+                <li>count of occurrence of Ids</li>
+                <li>
+                  count of occurrence of Classes, pseudo-classes, attributes
+                </li>
+                <li>count of occurrence of Elements</li>
+              </ul>
+              So it gets evaluated to something like: (n, n, n, n) as described
+              below:
+            </li>
+            <li>
+              In the adjoining code
+              <ul>
+                <li>
+                  The first rule has only class element (<code>.button</code>)
+                  so the specificity evaulation becomes (0, 0, 1, 0)
+                </li>
+                <li>
+                  The second rule has an id (<code>#nav</code>), 2 classes
+                  (<code>.pull-right</code> and <code>.button</code>) and also 2
+                  elements (<code>div, a</code>). So the specificity rule
+                  evaulates to (0, 1, 2, 2)
+                </li>
+                <li>
+                  The third one has just 1 element (<code>a</code>), so the
+                  specificity selector is (0, 0, 0, 1)
+                </li>
+                <li>
+                  In the fourth rule, we have one id (<code>#nav</code>) one
+                  element (<code>a</code>), one class (<code>.button</code>) and
+                  one pseudo-class (<code>:hover</code>). So the specificity
+                  evaluates to (0, 1, 2, 1). Pseudo-class and class being
+                  treated equal.
+                </li>
+              </ul>
+            </li>
+            So we have 4 specificity rules to evaluate viz:
+            <ul>
+              <li>(0, 0, 1, 0)</li>
+              <li>(0, 1, 2, 2)</li>
+              <li>(0, 0, 0, 1)</li>
+              <li>(0, 1, 2, 1)</li>
+            </ul>
+            Evaluation begins from left to right. If there is even 1 inline
+            style specified, it wins instantly and everything else is thrown
+            away. In this case, there is no inline style specified. So then CSS
+            engine looks for IDs. There are 2 rules (2nd and 4th) which have an
+            ID and therefore the other 2 rules (1st and 3rd) are ignored.
+            Between the two contenders, rule 2 has more count of elements than
+            rule 4. Thus rule# 2 is applied.
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="example">
+      <nav id="nav">
+        <div class="pull-right">
+          <a href="#" class="button button-danger">Don't click here!</a>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>
