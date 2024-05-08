@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@200..800&display=swap");
 
 * {
   padding: 0;
@@ -9,10 +9,11 @@
 
 body {
   background-color: #292524;
-  font-family: 'Sono', sans-serif;
+  font-family: "Sono", sans-serif;
   color: #fafafa;
   padding: 48px 64px;
 }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -44,6 +45,7 @@ body {
   align-items: center;
   gap: 6px;
   border-radius: 10px;
+  transition: all 0.3s linear;
 }
 
 .fact-form input,
@@ -104,7 +106,7 @@ body {
 h1 {
   font-size: 42px;
   text-transform: uppercase;
-  font-family: 'Coiny', sans-serif;
+  font-family: "Coiny", sans-serif;
   line-height: 1;
   padding-bottom: 11px;
 }
@@ -136,7 +138,7 @@ h1 {
 .tag {
   text-transform: uppercase;
   font-size: 12px;
-  font-family: 'Coiny', sans-serif;
+  font-family: "Coiny", sans-serif;
   padding: 1px 8px 5px 8px;
   border-radius: 10px;
 }
@@ -163,7 +165,7 @@ ul {
 }
 
 .btn {
-  font-family: 'Coiny', sans-serif;
+  font-family: "Coiny", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   padding: 10px 18px 14px 18px;
@@ -215,4 +217,10 @@ ul {
 
 .vote-buttons button:hover {
   background-color: #292524;
+}
+
+.hidden {
+  opacity: 0.01;
+  max-height: 0px;
+  transition: opacity 1s, max-height 0s 1s;
 }
